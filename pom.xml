@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo-websvc</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>demo-websvc</name>
 	<description>demo-websvc</description>
 	<properties>
@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>com.example</groupId>
 			<artifactId>demo-client</artifactId>
-			<version>0.0.1</version>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
