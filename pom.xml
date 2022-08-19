@@ -44,4 +44,24 @@
 		</plugins>
 	</build>
 
+	<scm>
+		<developerConnection>
+			scm:git:git@github.com:appindus-zsmith/com.example.democlient.git
+		</developerConnection>
+		<tag>demo-client-7.0.0</tag>
+	</scm>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>develop</id>
+			<name>develop</name>
+			<url>https://github.com/appindus-zsmith/com.example.democlient</url>
+		</snapshotRepository>
+		<repository>
+			<id>master</id>
+			<name>master</name>
+			<url>https://github.com/appindus-zsmith/com.example.democlient</url>
+		</repository>
+	</distributionManagement>
+
 </project>
