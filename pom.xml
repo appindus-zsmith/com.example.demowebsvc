@@ -47,7 +47,6 @@
 		<developerConnection>
 			scm:git:git@github.com:appindus-zsmith/com.example.democlient.git
 		</developerConnection>
-		<tag>v1.0.0</tag>
 	</scm>
 
 	<distributionManagement>
