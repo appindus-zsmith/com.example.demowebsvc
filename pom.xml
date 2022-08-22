@@ -40,6 +40,37 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+				<configuration>
+					<includesList>com.example.*</includesList>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<includesList>com.example.*</includesList>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<tagNameFormat>dev@{project.version}</tagNameFormat>
+					<preparationGoals>
+						versions:use-latest-releases clean verify
+					</preparationGoals>
+					<completionGoals>
+						versions:use-latest-snapshots clean verify
+					</completionGoals>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
