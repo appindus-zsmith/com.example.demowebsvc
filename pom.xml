@@ -45,7 +45,7 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>versions-maven-plugin</artifactId>
 				<configuration>
-					<includesList>com.example.*</includesList>
+					<includesList>com.example*</includesList>
 				</configuration>
 			</plugin>
 
