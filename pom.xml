@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo-websvc</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>demo-websvc</name>
 	<description>demo-websvc</description>
 	<properties>
@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>com.example</groupId>
 			<artifactId>demo-client</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
@@ -50,24 +50,15 @@
 			</plugin>
 
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>versions-maven-plugin</artifactId>
-				<version>2.7</version>
-				<configuration>
-					<includesList>com.example.*</includesList>
-				</configuration>
-			</plugin>
-
-			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<tagNameFormat>dev@{project.version}</tagNameFormat>
 					<preparationGoals>
-						versions:use-latest-releases clean verify
+						versions:use-releases clean verify
 					</preparationGoals>
 					<completionGoals>
-						versions:use-latest-snapshots clean verify
+						versions:use-snapshots versions:use-latest-snapshots clean verify
 					</completionGoals>
 				</configuration>
 			</plugin>
