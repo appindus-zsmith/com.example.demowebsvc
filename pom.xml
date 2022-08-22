@@ -46,6 +46,7 @@
 				<artifactId>versions-maven-plugin</artifactId>
 				<configuration>
 					<includesList>com.example*</includesList>
+					<allowMinorUpdates>true</allowMinorUpdates>
 				</configuration>
 			</plugin>
 
