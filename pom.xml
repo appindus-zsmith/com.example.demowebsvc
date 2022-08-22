@@ -78,7 +78,8 @@
 		<developerConnection>
 			scm:git:git@github.com:appindus-zsmith/com.example.democlient.git
 		</developerConnection>
-	</scm>
+	  <tag>dev1.0.0</tag>
+  </scm>
 
 	<distributionManagement>
 		<snapshotRepository>
