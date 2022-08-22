@@ -58,7 +58,7 @@
 						versions:use-releases clean verify
 					</preparationGoals>
 					<completionGoals>
-						versions:use-snapshots versions:use-latest-snapshots clean verify
+						versions:use-latest-snapshots clean verify
 					</completionGoals>
 				</configuration>
 			</plugin>
