@@ -56,10 +56,10 @@
 				<configuration>
 					<tagNameFormat>dev@{project.version}</tagNameFormat>
 					<preparationGoals>
-						clean package install verify
+						versions:use-latest-releases clean package install verify
 					</preparationGoals>
 					<completionGoals>
-						versions:use-latest-snapshots clean verify
+						versions:use-latest-snapshots clean verify release:clean
 					</completionGoals>
 				</configuration>
 			</plugin>
@@ -70,7 +70,7 @@
 		<developerConnection>
 			scm:git:git@github.com:appindus-zsmith/com.example.democlient.git
 		</developerConnection>
-	  <tag>dev1.0.0</tag>
+	  <tag>dev1.3.0</tag>
   </scm>
 
 	<distributionManagement>
