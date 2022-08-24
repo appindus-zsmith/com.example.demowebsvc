@@ -5,4 +5,4 @@ on:
       - master
 jobs:
   tag-and-release:
-    uses: appindus-zsmith/github-workflows/.github/workflows/tag-and-release.yml@v1.0.0
+    uses: apple-industries/github-workflows/.github/workflows/tag-and-release.yml@v1.0.0
