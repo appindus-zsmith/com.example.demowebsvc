@@ -55,9 +55,9 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<tagNameFormat>dev@{project.version}</tagNameFormat>
-					<!--<preparationGoals>
-						versions:use-releases clean verify
-					</preparationGoals>-->
+					<preparationGoals>
+						clean package install verify
+					</preparationGoals>
 					<completionGoals>
 						versions:use-latest-snapshots clean verify
 					</completionGoals>
