@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo-websvc</artifactId>
-	<version>1.2.0</version>
+	<version>1.3.0-SNAPSHOT</version>
 	<name>demo-websvc</name>
 	<description>demo-websvc</description>
 	<properties>
@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>com.example</groupId>
 			<artifactId>demo-client</artifactId>
-			<version>1.6.0</version>
+			<version>1.7.0-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
@@ -70,7 +70,7 @@
 		<developerConnection>
 			scm:git:git@github.com:appindus-zsmith/com.example.democlient.git
 		</developerConnection>
-	  <tag>dev1.2.0</tag>
+	  <tag>dev1.0.0</tag>
   </scm>
 
 	<distributionManagement>
