@@ -1,0 +1,11 @@
+name: Develop Tag Actions
+
+on:
+  push:
+    branches
+     - develop
+    tags:
+      - 'r*'
+jobs:
+  create-release-pr:
+    uses: apple-industries/github-workflows/.github/workflows/tag-and-release.yml@v1.0.0
